@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTalk - Konsultasi Diabetes Melitus Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>DTalk</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#chat">Konsultasi</a></li>
+                <li><a href="#founder">Pencetus</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Selamat Datang di <span class="highlight">DTalk</span></h1>
+                <p class="subtitle">Platform Konsultasi Diabetes Melitus Online Terpercaya</p>
+                <p class="description">Dapatkan informasi, edukasi, dan konsultasi seputar diabetes melitus dari komunitas yang peduli</p>
+                <div class="hero-buttons">
+                    <a href="#chat" class="btn btn-primary">
+                        <i class="fas fa-comments"></i> Mulai Konsultasi
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Pelajari Lebih Lanjut
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <i class="fas fa-user-md"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Diabetes Melitus</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon-box">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Apa itu Diabetes?</h3>
+                    <p>Diabetes melitus adalah kondisi kronis dimana tubuh tidak dapat mengatur kadar gula darah dengan baik akibat gangguan produksi atau fungsi insulin.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box">
+                        <i class="fas fa-list-ul"></i>
+                    </div>
+                    <h3>Jenis Diabetes</h3>
+                    <p>Tipe 1 (ketergantungan insulin), Tipe 2 (resistensi insulin), dan Gestasional (saat kehamilan).</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Gejala</h3>
+                    <p>Sering haus, sering buang air kecil, penurunan berat badan, mudah lelah, luka sulit sembuh, dan penglihatan kabur.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Pencegahan</h3>
+                    <p>Pola makan sehat, olahraga teratur, menjaga berat badan ideal, dan pemeriksaan rutin gula darah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Layanan Kami</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Konsultasi Online</h3>
+                    <p>Diskusi langsung dengan komunitas dan volunteer seputar diabetes</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-book-medical"></i>
+                    <h3>Edukasi Diabetes</h3>
+                    <p>Informasi terkini tentang pengelolaan dan pencegahan diabetes</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Panduan Diet</h3>
+                    <p>Rekomendasi pola makan sehat untuk penderita diabetes</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Monitoring Gula Darah</h3>
+                    <p>Tips dan trik memantau kadar gula darah Anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Section -->
+    <section id="chat" class="chat-section">
+        <div class="container">
+            <h2 class="section-title">Konsultasi Online</h2>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chat-header-info">
+                        <i class="fas fa-user-circle"></i>
+                        <div>
+                            <h3>DTalk Assistant</h3>
+                            <span class="status">Online</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            <p>Halo! Selamat datang di DTalk 👋</p>
+                            <p>Saya siap membantu Anda dengan informasi seputar diabetes melitus. Silakan pilih topik atau ketik pertanyaan Anda:</p>
+                            <div class="quick-buttons">
+                                <button class="quick-btn" data-message="Apa itu diabetes?">Apa itu diabetes?</button>
+                                <button class="quick-btn" data-message="Gejala diabetes">Gejala diabetes</button>
+                                <button class="quick-btn" data-message="Tips diet diabetes">Tips diet</button>
+                                <button class="quick-btn" data-message="Olahraga untuk diabetes">Olahraga</button>
+                            </div>
+                        </div>
+                        <span class="message-time">Baru saja</span>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="messageInput" placeholder="Ketik pertanyaan Anda...">
+                    <button id="sendButton">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="founder">
+        <div class="container">
+            <h2 class="section-title">Pencetus DTalk</h2>
+            <div class="founder-card">
+                <div class="founder-image">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="founder-info">
+                    <h3>Indi</h3>
+                    <p class="founder-title">Founder & Creator DTalk</p>
+                    <p class="founder-description">
+                        DTalk diciptakan dengan tujuan memberikan akses informasi dan konsultasi yang mudah bagi penderita diabetes melitus dan keluarganya. 
+                        Indi percaya bahwa edukasi yang tepat dan dukungan komunitas dapat membantu meningkatkan kualitas hidup penderita diabetes.
+                    </p>
+                    <blockquote class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        "Diabetes bukan akhir dari segalanya, tetapi awal dari gaya hidup yang lebih sehat dan bijaksana."
+                        <i class="fas fa-quote-right"></i>
+                    </blockquote>
+                    <div class="founder-mission">
+                        <h4><i class="fas fa-bullseye"></i> Misi Kami</h4>
+                        <ul>
+                            <li>Menyediakan platform edukasi diabetes yang mudah diakses</li>
+                            <li>Membangun komunitas yang saling mendukung</li>
+                            <li>Meningkatkan kesadaran tentang pencegahan diabetes</li>
+                            <li>Membantu penderita diabetes menjalani hidup yang lebih baik</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-heartbeat"></i> DTalk</h3>
+                    <p>Platform konsultasi diabetes melitus online terpercaya</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#chat">Konsultasi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@dtalk.com</li>
+                        <li><i class="fas fa-phone"></i> +62 812-3456-7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DTalk - Created by Indi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
